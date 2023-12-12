@@ -21,6 +21,7 @@ def max_color_count(color, line):
             value_list.append(num_value)
     return max(value_list)
 
+
 game_id_count = 0
 
 with open(input_file, mode="r") as file:

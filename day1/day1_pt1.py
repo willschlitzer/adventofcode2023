@@ -10,12 +10,12 @@ with open(calibration_input_file, mode="r") as file:
         for char in line:
             if char.isdigit():
                 line_nums.append(str(char))
-        if len(line_nums)<2:
+        if len(line_nums) < 2:
             line_nums.append(line_nums[0])
         calibration_value = int(line_nums[0] + line_nums[-1])
         calibration_value_list.append(calibration_value)
 
-#print(calibration_value_list)
+# print(calibration_value_list)
 for value in calibration_value_list:
     calibration_values += value
 
